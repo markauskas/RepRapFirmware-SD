@@ -9,7 +9,7 @@ M83 							; ...but relative extruder moves
 M555 P2 						; Set firmware compatibility to look like Marlin
 
 ; Network
-M550 P"ToolChanger" 					; Set machine name
+M550 P"Extrudi" 					; Set machine name
 ;M587 S"ssid" P"password"				; WiFi Settings
 ;M552 S1 P"ssid"					; Enable WiFi Networking
 M552 S1							; Enable Networking
