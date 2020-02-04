@@ -5,10 +5,10 @@
 M116 P2
 
 ;prime nozzle
-;M98 Pprime.g
+;M98 P"prime.g"
 
 ;mesh levelling on
 G29 S1
 
 ;PCF fan on
-M106 P6 S255
+;M106 P6 S255
