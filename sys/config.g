@@ -30,7 +30,7 @@ M569 P8 S0						; Drive 8 UNUSED
 M569 P9 S0						; Drive 9 UNUSED
 
 M584 X0 Y1 Z2 C7 E3:4:5:6				; Apply custom drive mapping
-M208 X-35:328.5 Y-49:243 Z0:300 C0:500 S0		; Set axis maxima & minima
+M208 X-30.2:328.5 Y-46.1:243 Z0:300 C0:500 S0		; Set axis maxima & minima
 M350 E8:8:8:8 C8 I0					; Configure microstepping without interpolation
 M350 X16 Y16 Z16 I1					; Configure microstepping with interpolation
 M92 X100 Y100 Z1600 C100 E417:417:417:417		; Set steps per mm
@@ -41,8 +41,7 @@ M906 X1200 Y1200 Z1330 C400 E1200:1200:1200:1200 I30	; Set motor currents (mA) a
 M84 S120						; Set idle timeout
 
 ; Endstops
-M574 X1 Y1 S3						; Set X / Y endstop stall detection
-M574 Z0							; No Z endstop
+M574 X1 Y1 Z1 S1					; X / Y / Z
 M558 P8 C"zstop" H3 F360 I0 T20000			; Set Z probe type to switch
 G31 P200 X0 Y0 Z0					; Set Z probe trigger value, offset and trigger height
 M557 X10:290 Y20:180 S40				; Mesh grid
