@@ -41,7 +41,8 @@ M906 X1200 Y1200 Z1330 C400 E1200:1200:1200:1200 I30	; Set motor currents (mA) a
 M84 S120						; Set idle timeout
 
 ; Endstops
-M574 X1 Y1 Z1 S1					; X / Y / Z
+M574 X1 Y1 S1						; X / Y
+M574 Z0
 M558 P8 C"zstop" H3 F360 I0 T20000			; Set Z probe type to switch
 G31 P200 X0 Y0 Z0					; Set Z probe trigger value, offset and trigger height
 M557 X10:290 Y20:180 S40				; Mesh grid
