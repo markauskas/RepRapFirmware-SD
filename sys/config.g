@@ -120,9 +120,9 @@ M593 F50 ; cancel ringing at 50Hz (https://forum.e3d-online.com/threads/accelero
 
 ; Tool offsets
 G10 P0 X7 Y39 Z-13.0
-G10 P1 X19 Y39 Z-6
-G10 P2 X7 Y39 Z-12.8
-G10 P3 X7 Y39 Z-12.8
+G10 P1 X21 Y38.6 Z-6
+G10 P2 X6.8 Y39 Z-12.8
+G10 P3 X6.4 Y39 Z-12.8
 
 ; Deselect tools
 T-1
