@@ -1,7 +1,6 @@
 ; homec.g
 ; called to home the C axis (coupler)
 
-;crashc
 G92 C500
 M913 C40			; C MOTOR TO 40% CURRENT
 G1 C-500 F2400
